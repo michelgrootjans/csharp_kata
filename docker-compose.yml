@@ -1,0 +1,8 @@
+version: '3'
+services:
+  dotnet:
+    image: microsoft/dotnet:sdk
+    volumes:
+    - ./:/kata
+    working_dir: /kata
+    command: dotnet test
