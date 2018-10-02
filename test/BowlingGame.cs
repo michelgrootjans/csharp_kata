@@ -11,14 +11,8 @@ namespace Kata
         public void Roll(int fallenPins)
         {
             rolls.Add(fallenPins);
-            ApplyDirtyHack(fallenPins);
-        }
-
-        private void ApplyDirtyHack(int fallenPins)
-        {
-            if (fallenPins == 10 && counter % 2 == 0)
+            if (fallenPins == 10 && rolls.Count % 2 == 1)
                 rolls.Add(0); // dirty hack, so that frames always take 2 indexes in the list
-            counter++;
         }
 
         public int Score( )

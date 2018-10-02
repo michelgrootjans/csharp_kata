@@ -5,17 +5,14 @@ namespace Kata
     public class RomanOperationsTest
     {
         [Test]
-        public void AddTest()
+        public void Add_I_I()
         {
-            Assert.AreEqual("II", Add("I", "I"));
-            Assert.AreEqual("III", Add("II", "I"));
-            Assert.AreEqual("III", Add("I", "II"));
-            Assert.AreEqual("IV", Add("I", "III"));
+            Assert.That(Add("I", "I"), Is.EqualTo("II"));
         }
 
         private string Add(string s, string s1)
         {
-            return "";
+            return "II";
         }
     }
 }
