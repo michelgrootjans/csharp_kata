@@ -1,2 +1,1 @@
-# C# Kata
-Basic setup for kata's in C#
+# Potential solutions to C# Exercises given at [AP](https://www.ap.be/)
