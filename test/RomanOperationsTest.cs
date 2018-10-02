@@ -43,9 +43,9 @@ namespace Kata
         }
 
         [Test]
-        public void Add_I_IIII()
+        public void Add_I_IV()
         {
-            Assert.That(operations.Add("I", "IIII"), Is.EqualTo("V"));
+            Assert.That(operations.Add("I", "IV"), Is.EqualTo("V"));
         }
 
         [Test]
@@ -100,6 +100,18 @@ namespace Kata
         public void Add_XIX_XX()
         {
             Assert.That(operations.Add("XIX", "XX"), Is.EqualTo("XXXIX"));
+        }
+
+        [Test]
+        public void Add_XIX_XXI()
+        {
+            Assert.That(operations.Add("XIX", "XXI"), Is.EqualTo("XL"));
+        }
+
+        [Test]
+        public void Add_26_24()
+        {
+            Assert.That(operations.Add("XXVI", "XXIV"), Is.EqualTo("L"));
         }
     }
 }

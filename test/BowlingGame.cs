@@ -1,12 +1,10 @@
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Kata
 {
     public class BowlingGame
     {
         private readonly List<int> rolls = new List<int>();
-        private int counter;
 
         public void Roll(int fallenPins)
         {
@@ -77,7 +75,7 @@ namespace Kata
 
         private int GetRoll(int index)
         {
-            if (index < rolls.Count())
+            if (index < rolls.Count)
                 return rolls[index];
 
             return 0;
